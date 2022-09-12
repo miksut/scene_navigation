@@ -1,5 +1,14 @@
-# Advanced Computer Graphics
+# Computer Graphics: Scene Navigation
 
+This repository hosts an implementation two cameras: ArcBall and Fly-over. This project is linked to a lecture offered by the [Visualization and MultiMedia Lab](https://www.ifi.uzh.ch/en/vmml/teaching.html) in the Department of Informatics at the University of Zurich, Switzerland.
+
+---
+## Project Description
+
+
+---
+
+## Installation and Setup
 This program has the following dependencies:
 
  1. OpenGL
@@ -8,13 +17,12 @@ This program has the following dependencies:
  4. FreeImage
  5. Assimp
 
-## Dependencies
-OpenGL should already exist on your platform.
-Assimp source code is included in this repository and will be built the first time you build this project.
+### Dependencies
+OpenGL should already exist on the platform. The Assimp source code is included in this repository and will be built the first time when building this project.
 
 **on Mac:**
 
-You can install the remaining three dependencies using homebrew:
+Install the remaining three dependencies using homebrew:
 ```
 brew install glew
 brew install glfw3
@@ -22,20 +30,19 @@ brew install freeimage
 ```
 
 **on Windows:**
-
-You don't need to install any external library since all dependencies are included in this repository.
+All dependencies are included in this repository. When running CMake, choose "Visual Studio xx WIN64" or choose "Visual Studio xx" as the target platform. In the second case, make sure to definitely choose x64 in the next field.
 
 **on Linux:**
 
-You can install the remaining three dependencies using apt-get:
+Install the remaining three dependencies using apt-get:
 ```
 sudo apt-get install libglew-dev
 sudo apt-get install libglfw3-dev
 sudo apt-get install libfreeimage3 libfreeimage-dev
 ```
 
-## Build
-After installing the dependencies you should be able to use cmake to build the project. Make sure that the build folder is inside the project folder:
+### Build
+After installing the dependencies, use CMake to build the project. Make sure that the build folder is inside the project folder:
 
 ```
 [project root]
@@ -48,9 +55,4 @@ After installing the dependencies you should be able to use cmake to build the p
 	|-- src
 	
 ```
-## Run
-When running the project, the output should look like [root]/doc/starting_scene.png (the Menu might be collapsed)
-![Starting Scene](./doc/starting_scene.png)
-
-## Note
-Contact us if you have any problem building the project.
+---
