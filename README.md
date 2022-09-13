@@ -1,10 +1,12 @@
 # Computer Graphics: Scene Navigation
 
-This repository hosts an implementation two cameras: ArcBall and Fly-over. This project is linked to a lecture offered by the [Visualization and MultiMedia Lab](https://www.ifi.uzh.ch/en/vmml/teaching.html) in the Department of Informatics at the University of Zurich, Switzerland.
+This repository hosts an implementation of two cameras: ArcBall and Fly-over. The project is linked to a lecture offered by the [Visualization and MultiMedia Lab](https://www.ifi.uzh.ch/en/vmml/teaching.html) in the Department of Informatics at the University of Zurich, Switzerland.
 
 ---
 ## Project Description
+In order to draw a 3D scene consisting of 3D objects, several transformations are needed. These transformations change the coordinate system of the vertices. Starting in the model coordinate system, a vertex gets then gradually transformed to the world coordinate system, the camera coordinate system, and finally to the projection coordinate system. The camera specification, that consists of multiple parameters, is responsible for the last two transformations. In an application, the user should be able to manipulate some of these parameters such as the position and the orientation of the camera. The idea is to design different mappings between keyboard and mouse inputs to camera movements. Such a mapping affects how conveniently and quickly a user reaches the position and orientation they want. 
 
+In this project, two well-known cameras and their associated mappings are implemented: ArcBall and Fly-over. The implementation takes place in the `Camera` class. The two functions `mouseDrag` and `mouseScroll` rececive the inputs and update the camera parameters as well as the relevant matrices. The application builds upon a framework provided by the Visualization and MultiMedia Lab.
 
 ---
 
