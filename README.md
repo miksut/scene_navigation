@@ -1,6 +1,6 @@
 # Computer Graphics: Scene Navigation
 
-This repository hosts an implementation of two cameras: ArcBall and Fly-over. The project is linked to a lecture offered by the [Visualization and MultiMedia Lab](https://www.ifi.uzh.ch/en/vmml/teaching.html) in the Department of Informatics at the University of Zurich, Switzerland.
+This repository hosts an implementation of two cameras: ArcBall and Fly-over. The project has been completed as part of a lecture offered by the [Visualization and MultiMedia Lab](https://www.ifi.uzh.ch/en/vmml/teaching.html) in the Department of Informatics at the University of Zurich, Switzerland.
 
 ---
 ## Project Description
